@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tour Virtual Dani</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <style>
+      body { margin: 0; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src="scene360.jpg" rotation="0 -130 0"></a-sky>
+
+      <!-- Hotspot de prueba -->
+      <a-image src="https://img.icons8.com/color/48/000000/info--v1.png"
+               position="0 1.6 -3"
+               scale="1 1 1"
+               look-at="[camera]"
+               onclick="alert('Esto es un hotspot de prueba')">
+      </a-image>
+
+      <a-camera wasd-controls-enabled="false" look-controls="true"></a-camera>
+    </a-scene>
+  </body>
+</html>
